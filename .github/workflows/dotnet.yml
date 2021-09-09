@@ -1,4 +1,4 @@
-name: .NET
+name: Build .NET
 
 on:
   push:
@@ -23,9 +23,6 @@ jobs:
     - name: Build
       working-directory: Source
       run: dotnet build --no-restore
-      
-      
-      
     #- name: Test
     #  working-directory: Source/SpacePortTest
     #  run: dotnet test --no-build --verbosity normal
