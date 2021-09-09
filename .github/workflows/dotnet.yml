@@ -32,6 +32,8 @@ jobs:
         docker version
 
         docker run --rm hello-world
+    - name: test
+      run: docker version
       
       
     #- name: Test
