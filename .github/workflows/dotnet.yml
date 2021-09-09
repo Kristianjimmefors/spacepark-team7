@@ -24,16 +24,6 @@ jobs:
       working-directory: Source
       run: dotnet build --no-restore
       
-    - name: Install Docker
-    - uses: docker-practice/actions-setup-docker@master
-    - run: |
-        set -x
-
-        docker version
-
-        docker run --rm hello-world
-    - name: test
-      run: docker version
       
       
     #- name: Test
